@@ -1,0 +1,155 @@
+﻿
+@section Style {
+    <link rel="stylesheet" href="~/css/baidadang.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+}
+
+@model List<NHNT_G08.Models.Phong>
+
+<div class="main">
+    <h1 class="title">Quản lý bài đăng thuê trọ</h1>
+    <div class="grid item">
+        <a class="thembaidang" asp-controller="BaiDang" asp-action="ThemBaiDang" >Thêm bài đăng</a>
+
+        @* <input type="text" id="searchInput" class="search-input" placeholder="Tìm kiếm sản phẩm...">
+        <button id="searchBtn" class="search-button" onclick="searchProduct($('#searchInput').val())">Tìm kiếm</button> *@
+
+        <div id="product">
+            <table>
+                <tr>
+                    <th>STT</th>
+                    <th>Họ tên người đăng bài</th>
+                    <th>Số điện thoại</th>
+                    <th>Thông tin phòng trọ</th>
+                    <th>Trạng thái phòng</th>
+                    <th>Trạng thái bài đăng</th>
+                    <th>Tác vụ</th>
+                </tr>
+
+                @foreach (var item in Model.Select((baidang, i) => (baidang, i)))
+                {
+                    <tr>
+                        <td>@Convert.ToInt32(item.i + 1)</td>
+                        <td>@item.baidang.tenNguoiDang</td>
+                        <td>@item.baidang.soDienThoai</td>
+                        <td>
+                            <span>Tên phòng :@item.baidang.tenPhong</span><br>
+                            <span>Địa chỉ :@item.baidang.diaChi</span><br>
+                            <span>Giá phòng : @item.baidang.giaPhong</span><br>
+                            <span>Giá điện : @item.baidang.giaDien</span><br>
+                            <span>Giá nước : @item.baidang.giaNuoc</span><br>
+                            <span>Diện tích :@item.baidang.dienTich</span>
+                        </td>
+
+                        <td>@item.baidang.trangThaiPhong</td>
+                        <td>@item.baidang.trangThaiBaiDang</td>
+                        <td>
+                            @Html.ActionLink("Sửa Bài", "SuaBaiDang", item.baidang, new { @class = "btn_sua" })
+                            <button class="btn_xoa" data-id=@item.baidang.maPhong>Xóa Bài</button>
+                        </td>
+                    </tr>
+                }
+            </table>
+        </div>
+        
+    </div>
+    @*@{
+            var previousDisabled = !Model.HasPreviousPage ? "disabled" : "";
+            var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+        }
+
+        <div class="page">
+            <a asp-action="Index" asp-route-pageIndex="@(Model.PageIndex -1)" class="btn btn-primary @previousDisabled">
+                Previous
+            </a>
+
+            <a asp-action="Index" asp-route-pageIndex="@(Model.PageIndex +1)" class="btn btn-primary @nextDisabled">
+                Next
+            </a>
+        </div>*@
+</div>
+
+@section Scripts {
+    <script>
+        $('document').ready(function () {
+            $('.btn_xoa').click(function () {
+                var maPhong = $(this).attr("data-id");
+                var result = confirm("Bạn có xác nhận xóa bài đăng này ?")
+                if (result == true) {
+                $.ajax({
+                    type: "POST",
+                    url: "@Url.Action("XoaBaiDang")",
+                    data: {
+                        maPhong: maPhong,
+                    },
+                    success: function (result) {
+                        result ? alert('Xóa Thành Công') : alert('Xóa Thất Bại')
+                        window.location.href = "@Url.Action("BaiDaDang")"
+                    }
+                });
+                }
+            })
+        })
+
+        function searchProduct(searchString) {
+            $.ajax({
+                url: '/BaiDang/SearchProduct?searchString=' + searchString,
+                type: 'POST',
+                dataType: 'json',
+                contentType: 'application/json;charset=utf-8',
+                success: function (response) {
+                    if (response == null || response == undefined || response.length == 0) {
+                        var data = '';
+                        data += '<h4>Không có hàng hóa nào</h4>'
+                        $('#product').html(data);
+                    } else {
+                        console.log(response);
+                        var data = '';
+                        data += '<table>'
+                        data += '<tr>'
+
+                        data += '<th>' + 'họ và tên' + '</th>'
+                        data += '<th>' + 'sđt' + '</th>'
+                        data += '<th>' + 'thông tin phòng' + '</th>'
+                        data += '<th>' + 'trạng thái phòng' + '</th>'
+                        data += '<th>' + 'trạng thái bài đăng' + '</th>'
+                        
+                        data += '</tr>'
+                        $.each(response, function (k, v) {
+                            
+
+                            data +='<tr>'
+                           
+                            data +='<td>'+ v.tenNguoiDang +'</td>'
+                            data += '<td>' + v.soDienThoai + '</td>'
+                            data += '<td>'
+                            data += '<span>'+ v.tenPhong + '</span>'
+                            data += '<br>'
+                            data += '<span>' + v.diaChi + '</span>'
+                            data += '<br>'
+                            data += '<span>' + v.giaPhong + '</span>'
+                            data += '<br>'
+                            data += '<span>' + v.giaDien + '</span>'
+                            data += '<br>'
+                            data += '<span>' + v.giaNuoc + '</span>'
+                            data += '<br>'
+                            data += '<span>' + v.dienTich + '</span>'
+
+                            data += '<td>'+ v.trangThaiPhong +'</td>'
+                            data += '<td>' + v.trangThaiBaiDang +'</td>'
+                            data += '</td>'
+                            data += '</tr>'
+                            data += '</table>'
+                        });
+                        console.clear();
+                        console.log(response);
+                        $('#product').html(data);
+                    }
+                },
+                error: function () {
+                    alert('Không đọc được dữ liệu');
+                }
+            });
+        }
+    </script>
+}

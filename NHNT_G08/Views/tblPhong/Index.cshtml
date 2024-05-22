@@ -1,0 +1,130 @@
+﻿@using System.Globalization;
+@model Pagination<Phong>
+@{
+    ViewData["Title"] = "Danh Sách Phòng";
+}
+
+@section Style {
+    <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="~/css/index.css" />
+}
+<div class="main">
+    <fieldset class="fieldset_item" id="fieldset_item-mienbac">
+        <legend class="fieldset_item-title">
+            <a href="" id="">****** Thông tin phòng trọ *****</a>
+        </legend>
+
+        <@* form method="get" action="@Url.Action("Index", "Home")">
+            <input type="text" name="search" placeholder="Tìm kiếm theo địa chỉ">
+            <button type="submit">Tìm kiếm</button>
+            <a asp-action="SortByPrice" class="btn btn-primary">Sắp xếp theo giá</a>
+            </form> *@
+
+        @* <div id="tableContainer" class="container text-center"  >
+            <!-- Bảng sẽ được hiển thị ở đây -->
+        </div> *@
+
+        <div class="grid item">
+
+            @foreach (var phong in Model)
+            {
+                    <div class="grid_col_4 item_travel">
+                        <a asp-action="ChiTietPhong" asp-route-id=@phong.maPhong>
+                        @if (phong.tenAnh == null)
+                        {
+                                    <div class="item_travel-item1" style="background-image: url('/img/anhtro/anh1.jpg');"></div>
+                        }
+                        else
+                        {
+                                    <div class="item_travel-item1" style="background-image: url('/img/anhphong_@phong.maPhong/@phong.tenAnh[0]');"></div>
+                        }
+
+                        </a>
+                        <div class="item_travel-item2">
+                            <div class="item_travel-item2-con">
+                                <div class="stars" style="--rating: @String.Format(CultureInfo.InvariantCulture, "{0:F2}", phong.soSaoTrungBinh);" aria-label="Rating of this product is 2.3 out of 5."></div>
+                                <span>@phong.soLuotDanhGia lượt</span>
+
+                                <span class="item_travel-item2-con-price">@phong.giaPhong.ToString("#,#") Đ</span>
+                            </div>
+                            <a asp-action="ChiTietPhong" asp-route-id=@phong.maPhong class="item_travel-item2-title">@phong.tenPhong</a>
+
+                            <div class="item_travel-item2-info">
+                                <div>
+                                    <p>
+                                        <i class="fa-sharp fa-solid fa-location-dot"></i>
+                                        <span class="travel-item2-info--span">Địa chỉ: @phong.diaChi</span>
+                                    </p>
+                                    <p>
+                                        <i class="fa-sharp fa-solid fa-bolt"></i>
+                                        <span class="travel-item2-info--span">Giá điện: @phong.giaDien.ToString("#,#") Đ</span>
+                                    </p>
+                                    <p>
+                                        <i class="fa-sharp fa-solid fa-droplet"></i>
+                                        <span class="travel-item2-info--span">Giá nước: @phong.giaNuoc.ToString("#,#") Đ</span>
+                                    </p>
+                                    <p>
+                                        <i class="fa-solid fa-user"></i>
+                                         <span class="travel-item2-info--span">veriFyKey: @phong.veriFyKey</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            }
+
+
+        </div>
+        @{
+            var previousDisabled = !Model.HasPreviousPage ? "disabled" : "";
+            var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+        }
+
+       <div class="page">
+            <a asp-action="Index" asp-route-pageIndex="@(Model.PageIndex -1)" class="btn btn-primary @previousDisabled">
+                Previous
+            </a>
+
+            <a asp-action="Index" asp-route-pageIndex="@(Model.PageIndex +1)" class="btn btn-primary @nextDisabled">
+                Next
+            </a>
+        </div>
+    </fieldset>
+
+    <br><br><br>
+ 
+
+</div>
+
+@section Scripts {
+    @if (TempData["ThongBao"] != null)
+    {
+        <script type="text/javascript" charset="utf-8">alert('@Html.Raw(TempData["ThongBao"])');</script>
+    }
+    <script>
+        $(document).ready(function () {
+            $.ajax({
+                url: '@Url.Action("HienP", "tblPhong")',
+                type: 'GET',
+                dataType: 'json',
+                success: function (data) {
+                    console.log(data);
+                    // Xử lý dữ liệu JSON và cập nhật bảng
+                    var table = '<table class="table table-bordered table-striped"><thead><tr><th>Ma</th><th>Ten</th><th>Loai Tk</th></tr></thead><tbody>';
+                    $.each(data, function (index, item) {
+                        table += '<tr><td>' + item.ma + '</td><td>' + item.tenP + '</td><td>' + item.diaC + '</td></tr>';
+                    });
+                    table += '</tbody></table>';
+                    $('#tableContainer').html(table);
+                },
+                error: function () {
+                    console.error('Error retrieving table data.');
+                }
+            });
+        });
+    </script>
+}
+
+                    [@* RegularExpression("^[0-9].*", ErrorMessage = "Chu dau tien la so")]
+    [StringLength(10, MinimumLength = 10, ErrorMessage = "It nhat la 10 ky tu")]
+    public string? veriFyKey { get; set; } *@

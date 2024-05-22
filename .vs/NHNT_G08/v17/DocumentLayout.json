@@ -1,0 +1,199 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\WebNC\\WebNC-main\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|d:\\webnc\\webnc-main\\nhnt_g08\\models\\btlnhntg08context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|solutionrelative:nhnt_g08\\models\\btlnhntg08context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|d:\\webnc\\webnc-main\\nhnt_g08\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|solutionrelative:nhnt_g08\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|d:\\webnc\\webnc-main\\nhnt_g08\\models\\phong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|solutionrelative:nhnt_g08\\models\\phong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|d:\\webnc\\webnc-main\\nhnt_g08\\controllers\\tblphongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|solutionrelative:nhnt_g08\\controllers\\tblphongcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|d:\\webnc\\webnc-main\\nhnt_g08\\views\\tblphong\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|solutionrelative:nhnt_g08\\views\\tblphong\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|d:\\webnc\\webnc-main\\nhnt_g08\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|solutionrelative:nhnt_g08\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|d:\\webnc\\webnc-main\\nhnt_g08\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|solutionrelative:nhnt_g08\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|d:\\webnc\\webnc-main\\nhnt_g08\\models\\tblphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|solutionrelative:nhnt_g08\\models\\tblphong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|d:\\webnc\\webnc-main\\nhnt_g08\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|solutionrelative:nhnt_g08\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|d:\\webnc\\webnc-main\\nhnt_g08\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|solutionrelative:nhnt_g08\\wwwroot\\css\\index.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|d:\\webnc\\webnc-main\\nhnt_g08\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{74F67EDA-6574-49F5-B56F-24841C2032D0}|NHNT_G08\\NHNT_G08.csproj|solutionrelative:nhnt_g08\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BtlNhntG08Context.cs",
+              "DocumentMoniker": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Models\\BtlNhntG08Context.cs",
+              "RelativeDocumentMoniker": "NHNT_G08\\Models\\BtlNhntG08Context.cs",
+              "ToolTip": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Models\\BtlNhntG08Context.cs",
+              "RelativeToolTip": "NHNT_G08\\Models\\BtlNhntG08Context.cs",
+              "ViewState": "AQIAAAoAAAAAAAAAAAAQwB8AAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T11:19:17.022Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Phong.cs",
+              "DocumentMoniker": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Models\\Phong.cs",
+              "RelativeDocumentMoniker": "NHNT_G08\\Models\\Phong.cs",
+              "ToolTip": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Models\\Phong.cs",
+              "RelativeToolTip": "NHNT_G08\\Models\\Phong.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAkwCoAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T09:20:07.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "site.css",
+              "DocumentMoniker": "D:\\WebNC\\WebNC-main\\NHNT_G08\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "NHNT_G08\\wwwroot\\css\\site.css",
+              "ToolTip": "D:\\WebNC\\WebNC-main\\NHNT_G08\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "NHNT_G08\\wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAsBAAAAAAAAAAAAABwBAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-17T07:44:02.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "index.css",
+              "DocumentMoniker": "D:\\WebNC\\WebNC-main\\NHNT_G08\\wwwroot\\css\\index.css",
+              "RelativeDocumentMoniker": "NHNT_G08\\wwwroot\\css\\index.css",
+              "ToolTip": "D:\\WebNC\\WebNC-main\\NHNT_G08\\wwwroot\\css\\index.css",
+              "RelativeToolTip": "NHNT_G08\\wwwroot\\css\\index.css",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-17T07:43:51.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "NHNT_G08\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "NHNT_G08\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T07:33:58.061Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "NHNT_G08\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "NHNT_G08\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAAFoAAAAUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T07:22:44.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Views\\tblPhong\\Index.cshtml",
+              "RelativeDocumentMoniker": "NHNT_G08\\Views\\tblPhong\\Index.cshtml",
+              "ToolTip": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Views\\tblPhong\\Index.cshtml",
+              "RelativeToolTip": "NHNT_G08\\Views\\tblPhong\\Index.cshtml",
+              "ViewState": "AQIAADcAAAAAAAAAAAAAAEMAAABYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-17T07:22:36.348Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "tblPhongController.cs",
+              "DocumentMoniker": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Controllers\\tblPhongController.cs",
+              "RelativeDocumentMoniker": "NHNT_G08\\Controllers\\tblPhongController.cs",
+              "ToolTip": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Controllers\\tblPhongController.cs",
+              "RelativeToolTip": "NHNT_G08\\Controllers\\tblPhongController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAAACUAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T07:19:17.948Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "NHNT_G08\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "NHNT_G08\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAIUAAAAAAAAAAAAwwHoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T07:15:57.644Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\WebNC\\WebNC-main\\NHNT_G08\\appsettings.json",
+              "RelativeDocumentMoniker": "NHNT_G08\\appsettings.json",
+              "ToolTip": "D:\\WebNC\\WebNC-main\\NHNT_G08\\appsettings.json",
+              "RelativeToolTip": "NHNT_G08\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-17T07:33:56.342Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TblPhong.cs",
+              "DocumentMoniker": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Models\\TblPhong.cs",
+              "RelativeDocumentMoniker": "NHNT_G08\\Models\\TblPhong.cs",
+              "ToolTip": "D:\\WebNC\\WebNC-main\\NHNT_G08\\Models\\TblPhong.cs",
+              "RelativeToolTip": "NHNT_G08\\Models\\TblPhong.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAA7wCUAAABtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-17T09:18:28.075Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
